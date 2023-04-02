@@ -10,40 +10,29 @@
 <body>
 <div>
 
-    <textarea id="content" style="height:400px;width:600px;"  ></textarea>
 
-    <button id="do_compile" onclick="compile()"  > do_compile </button>
 
-    <div id="result"></div>
+    <div id="markdown_div_id"></div>
 
 </div>
 
 <script type="text/javascript">
-function compile(){
 
-    //获取要转换的文字
-    var text = document.getElementById("content").value;
-    //创建实例
-    var converter = new showdown.Converter();
-    //进行转换
-    var html = converter.makeHtml(text);
-    //展示到对应的地方  result便是id名称
- document.getElementById("result").innerHTML = html;
-}
 
 //1.read elua.text
 var client = new XMLHttpRequest();
 client.open('GET', 'eula.txt');
+client.send();
+
 client.onreadystatechange = function() {
     var text=client.responseText;
 //   alert(client.responseText);
-//2. 
+//2. fill markdown 
 var converter = new showdown.Converter(),
     // text      = '# hello, markdown!',
     html      = converter.makeHtml(text);
- document.getElementById("result").innerHTML = html;
+ document.getElementById("markdown_div_id").innerHTML = html;
 }
-client.send();
 
 
 </script>
