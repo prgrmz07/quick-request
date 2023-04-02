@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Markdown.js</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js"></script>
+	
+</head>
+<style>
+</style>
+<body>
+<div>
+
+
+
+    <div id="markdown_div_id"></div>
+
+</div>
+
+<script type="text/javascript">
+
+
+//1.read elua.text
+var client = new XMLHttpRequest();
+client.open('GET', 'eula.md');
+client.send();
+
+client.onreadystatechange = function() {
+    var text=client.responseText;
+//   alert(client.responseText);
+//2. fill markdown 
+var converter = new showdown.Converter(),
+    // text      = '# hello, markdown!',
+    html      = converter.makeHtml(text);
+ document.getElementById("markdown_div_id").innerHTML = html;
+}
+
+
+</script>
+</body>
+</html>
