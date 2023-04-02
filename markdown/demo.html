@@ -31,6 +31,21 @@ function compile(){
  document.getElementById("result").innerHTML = html;
 }
 
+//1.read elua.text
+var client = new XMLHttpRequest();
+client.open('GET', 'eula.txt');
+client.onreadystatechange = function() {
+    var text=client.responseText;
+//   alert(client.responseText);
+//2. 
+var converter = new showdown.Converter(),
+    // text      = '# hello, markdown!',
+    html      = converter.makeHtml(text);
+ document.getElementById("result").innerHTML = html;
+}
+client.send();
+
+
 </script>
 </body>
 </html>
