@@ -1,4 +1,4 @@
->“Developer(s)” means DKingSoft.
+>“Developer(s)” means prgrmz07.
 
 >“JetBrains” means JetBrains s.r.o. with its registered office at Na Hrebenech II 1718/10, Prague, 14000, Czech Republic, registered with the Commercial Register kept by the Municipal Court of Prague, Section C, file 86211, ID.Nr.: 265 02 275.
 
@@ -28,7 +28,7 @@
 >    * Reproduce, copy, distribute, resell or otherwise use the Software for any commercial purpose
 >    * Allow any third party to use the Software on behalf of or for the benefit of any third party
 >    * Use the Software in any way which breaches any applicable local, national or international law
->    * Use the Software for any purpose that DKingSoft considers is a breach of this EULA agreement
+>    * Use the Software for any purpose that prgrmz07 considers is a breach of this EULA agreement
 
 >Plugin is protected by copyright and other intellectual property laws and treaties. Developer or its licensors own all title, copyright and other intellectual property rights in Plugin.
 
